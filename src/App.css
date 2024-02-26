@@ -1,0 +1,42 @@
+:root {
+  /* primary colors */
+  --primary-black: #000000;       
+  --primary-blue-dark: #8884FF; 
+  --primary-orange: #fdad00;  
+  --primary-purple-light: #D7BCE8;
+  --primary-purple: #5F5566;      
+  --primary-purple-dark: #33202A; 
+  /* secondary colors */
+  --secondary-dark-blue: #0954b0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* ***************************** FULL PAGE LOADER ***************************** */
+.full-page-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #7f0095;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+/* ***************************** END FULL PAGE LOADER ***************************** */
